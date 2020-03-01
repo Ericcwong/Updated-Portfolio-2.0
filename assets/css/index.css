@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', ;
+}
+nav{
+    background-color: white;
+    z-index: 10;
+}
+a.py-2 {
+    color: black;
+    font-size: 1.60vw
+}
+a:first-child{
+    font-size: 1.60vw
+}
+.header{
+    background: url("/assets/images/navBackground.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 70vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home{
+    max-width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+.home h1{
+    font-size: 6vw;
+    font-weight: 800;
+    text-transform: uppercase;
+    color:white
+}
+.home p{
+    font-size: 1.5vw
+}
+
+.carousel{
+    border: 2px solid #C8C8C8;
+    max-width: 100%;
+}
+
