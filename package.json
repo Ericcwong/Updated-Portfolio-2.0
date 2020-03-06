@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Ericcwong/Updated-Portfolio-2.0/issues"
   },
-  "homepage": "https://github.com/Ericcwong/Updated-Portfolio-2.0#readme"
+  "homepage": "https://github.com/Ericcwong/Updated-Portfolio-2.0#readme",
+  "dependencies": {
+    "vue-carousel": "^0.18.0"
+  }
 }

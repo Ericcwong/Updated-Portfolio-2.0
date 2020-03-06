@@ -2,45 +2,44 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Noto Sans', ;
+    font-family: 'Noto Sans';
 }
-nav{
-    background-color: white;
-    /* z-index: 10; */
+#title {
+    float: left;
+    color: rgb(0, 0, 0);
+    font-size: 2.50rem
 }
-a.py-2 {
-    color: black;
-    font-size: 1.60vw
+a.nav-link{
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.9)!important;
 }
-/* a:first-child{
-    font-size: 1.60vw
-} */
 .header{
-    background: url("/assets/images/pictures//navBackground.jpg") no-repeat center center;
+    background: url("/public/assets/images/pictures//navBackground.jpg") no-repeat center center;
     /* -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover; */
     background-size: cover;
     will-change: transform;
-    height: 70vh;
+    height: 100vh;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
 }
 .home{
     max-width: 60%;
     margin: 0 auto;
     text-align: center;
+    
 }
 .home h1{
-    font-size: 6vw;
+    font-size: 6rem;
     font-weight: 800;
     text-transform: uppercase;
     color:white
 }
 .home p{
-    font-size: 1.5vw
+    font-size: 1.5rem
 }
 
 .card-deck{
