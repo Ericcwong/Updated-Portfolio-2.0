@@ -6,21 +6,22 @@
 }
 nav{
     background-color: white;
-    z-index: 10;
+    /* z-index: 10; */
 }
 a.py-2 {
     color: black;
     font-size: 1.60vw
 }
-a:first-child{
+/* a:first-child{
     font-size: 1.60vw
-}
+} */
 .header{
-    background: url("/assets/images/navBackground.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
+    background: url("/assets/images/pictures//navBackground.jpg") no-repeat center center;
+    /* -webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-background-size: cover;
+    -o-background-size: cover; */
     background-size: cover;
+    will-change: transform;
     height: 70vh;
     position: relative;
     display: flex;
@@ -42,8 +43,37 @@ a:first-child{
     font-size: 1.5vw
 }
 
-.carousel{
-    border: 2px solid #C8C8C8;
-    max-width: 100%;
+.card-deck{
+    margin-top: 2%;
+}
+img.card-img-top{
+   height: 200px;
+   border-bottom: 2px solid black;
 }
 
+/* Vertical card body */
+#frontEnd .cardHeader{
+    text-decoration: underline;
+}
+section.verticalCardDeck{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+}
+.vertical-card{
+    display: flex;
+    width: 75%;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid lightgray;
+}
+.vertical-card:nth-last-child(odd){
+    flex-direction: row-reverse;
+}
