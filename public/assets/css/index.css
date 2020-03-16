@@ -4,17 +4,25 @@
     box-sizing: border-box;
     font-family: 'Noto Sans';
 }
+/* Hides Scroll bar */
+body::-webkit-scrollbar {
+    display: none;
+}
+/* Left name */
 #title {
     float: left;
     color: rgb(0, 0, 0);
     font-size: 2.50rem
 }
+/* Navigation links */
 a.nav-link{
     font-size: 1.25rem;
     color: rgba(255, 255, 255, 0.9)!important;
 }
+/* Home page loading image (Need to work on this)
+    Mainly to get the scrolling image look */
 .header{
-    background: url("/public/assets/images/pictures//navBackground.jpg") no-repeat center center;
+    background: url("/assets/images/pictures//navBackground.jpg") no-repeat center center;
     /* -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover; */
@@ -26,25 +34,28 @@ a.nav-link{
     /* justify-content: center;
     align-items: center; */
 }
+/* Header text container */
 .home{
     max-width: 60%;
     margin: 0 auto;
-    text-align: center;
-    
+    text-align: center;   
 }
+/* header h1 */
 .home h1{
     font-size: 6rem;
     font-weight: 800;
     text-transform: uppercase;
     color:white
 }
+/* Header p text */
 .home p{
     font-size: 1.5rem
 }
-
+/* After the header and before the cards to have a margin */
 .card-deck{
     margin-top: 2%;
 }
+/* assigning all the images to have a set height */
 img.card-img-top{
    height: 200px;
    border-bottom: 2px solid black;
