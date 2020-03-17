@@ -60,6 +60,10 @@ img.card-img-top{
    height: 200px;
    border-bottom: 2px solid black;
 }
+.cardImg{
+    max-height: 300px;
+    max-width: 300px;
+}
 
 /* Vertical card body */
 #frontEnd .cardHeader{
