@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container" style="width: 750px;">
+      <p style = "font-size: 1.5rem;">
+        Consider purchasing a gift certificate to continue supporting our small
+        family-owned business.
+      </p>
+      <p style = "font-size: 1.5rem;">Purchased gift certificates will be emailed to you</p>
+      <form action="mailto:ericwong12@live.com" method="post" enctype="text/plain">
+        <label style="font-size: 1rem;" for="firstName">First name:</label><br />
+        <input style="width: 100%; padding: .5rem 0 .5rem 0; border: 1px solid black;" type="text" id="firstName" name="firstName" /><br />
+        <label for="lastName">Last name:</label><br />
+        <input style="width: 100%; padding: .5rem 0 .5rem 0; border: 1px solid black" type="text" id="lastName" name="lastName" /><br />
+        <label for="email">Email:</label><br />
+        <input style="width: 100%; padding: .5rem 0 .5rem 0; border: 1px solid black" type="email" id="email" name="email" /><br />
+        <label for="amount">Amount:</label><br />
+        <input style="width: 100%; padding: .5rem 0 .5rem 0; border: 1px solid black" type="text" id="amount" name="amount" placeholder="$20" />
+        <input type="submit" value="Submit">
+      </form>
+      <br>
+      <div id="paypal-button-container"></div>
+      <script
+        src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD"
+        data-sdk-integration-source="button-factory"
+      ></script>
+      <script>
+        paypal
+          .Buttons({
+            style: {
+              shape: "rect",
+              color: "gold",
+              layout: "vertical",
+              label: "paypal"
+            },
+            createOrder: function(data, actions) {
+              return actions.order.create({
+                purchase_units: [{ amount: { value: "1" } }]
+              });
+            },
+            onApprove: function(data, actions) {
+              return actions.order.capture().then(function(details) {
+                alert(
+                  "Transaction completed by " +
+                    details.payer.name.given_name +
+                    "!"
+                );
+              });
+            }
+          })
+          .render("#paypal-button-container");
+      </script>
+      <script>
+
+      </script>
+    </div>
+  </body>
+</html>

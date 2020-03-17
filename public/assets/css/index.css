@@ -66,8 +66,11 @@ img.card-img-top{
 }
 
 /* Vertical card body */
-#frontEnd .cardHeader{
+#frontEnd, #backEnd .cardHeader{
     text-decoration: underline;
+}
+.cardHeader h1{
+    font-family: Arial, Helvetica, sans-serif;
 }
 section.verticalCardDeck{
     display: flex;
@@ -88,6 +91,25 @@ section.verticalCardDeck{
     justify-content: center;
     border: 1px solid lightgray;
 }
+.vertical-card img{
+    max-width: 400px;
+}
 .vertical-card:nth-last-child(odd){
+    flex-direction: row-reverse;
+}
+
+.vertical-cardEven{
+    display: flex;
+    width: 75%;
+    margin-top: 2rem;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid lightgray;
+}
+.vertical-cardEven img{
+    max-width: 400px
+}
+
+.vertical-cardEven:nth-last-child(even){
     flex-direction: row-reverse;
 }
