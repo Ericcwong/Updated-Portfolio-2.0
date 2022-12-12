@@ -19,7 +19,7 @@
   "homepage": "https://github.com/Ericcwong/Updated-Portfolio-2.0#readme",
   "dependencies": {
     "aos": "^2.3.4",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "vue-carousel": "^0.18.0"
   }
 }
